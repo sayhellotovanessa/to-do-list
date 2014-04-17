@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>AngelPrime to-do List</title>
+        <title>12HS Inventory Management To Do List</title>
 
         <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
@@ -10,10 +10,10 @@
     <body class="well">
         <div id="container">
 
-            <div id="header"> To Do List </div>
+            <div id="header"> 12HS Inventory Management To Do List </div>
 
             <div class="task-list task-container" id="pending">
-                <h3>Pending</h3>
+                <h3 class="todo-task">Pending</h3>
                 <!--<div class="todo-task">
                     <div class="task-header">Sample Header</div>
                     <div class="task-date">25/06/1992</div>
@@ -21,16 +21,32 @@
                 </div>-->
             </div>
 
-            <div class="task-list task-container" id="inProgress">
-                <h3>In Progress</h3>
+            <div class="task-list task-container" id="inProgress"><div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+                <h3 class="todo-task">In Progress</h3>
             </div>
 
             <div class="task-list task-container" id="completed">
-                <h3>Completed</h3>
+                <h3 class="todo-task">Completed</h3>
             </div>
 
-            <div class="task-list">
-                <h3>Add a task</h3>
+         <div class="task-list">
+                <h3 >Add a task</h3>
                 <form id="todo-form">
                     <input type="text" placeholder="Title" />
                     <textarea placeholder="Description"></textarea>
@@ -38,13 +54,13 @@
                     <input type="button" class="btn btn-primary" value="Add Task" onclick="todo.add();" />
                 </form>
 
-                <input type="button" class="btn btn-primary" value="Clear Data" onclick="todo.clear();" />
+			<!--	<input type="button" class="btn btn-primary" value="Clear Data" onclick="todo.clear();" /> -->
 
                 <div id="delete-div">
-                    Drag Here to Delete
+                    <p>Drag Here to Delete</p>
                 </div>
             </div>
-
+			
             <div style="clear:both;"></div>
 	          <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
             <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
