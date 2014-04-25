@@ -5,13 +5,22 @@ body {
     /* Override bootstrap properties */
     background-color: #374a5d !important;
     border: 0 !important;
+	margin: 0 auto;
+}
+#right{
+	float: right;
 }
 #container{
     margin: 0 auto;
-    width: 1060px;
-    min-height: 100%;
-    background-color: transparent;
+    width: auto;
+    min-height: 90%;
     border: 0;
+	text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #header{
     font-size: 30px;
@@ -20,7 +29,7 @@ body {
     color: #fff;
 }
 .task-list{
-    width: 250px;
+    width: 300px;
     float: left;
     margin: 0 5px;
     background-color: #e3e3e3;
@@ -29,7 +38,7 @@ body {
     padding-bottom: 15px;
 }
 .task-list input, .task-list textarea{
-    width: 240px;
+    width: 290px;
     margin: 1px 5px;
 }
 .task-list input{
@@ -37,7 +46,7 @@ body {
 }
 .todo-task{
     border-radius: 5px;
-    width: 230px;
+    width: 280px;
     margin: 5px;
     padding: 5px;
 }
